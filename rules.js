@@ -1,17 +1,18 @@
 class Start extends Scene {
     create() {
-        this.engine.setTitle("Title goes here"); // TODO: replace this text using this.engine.storyData to find the story title
+        this.engine.storyData; // TODO: replace this text using this.engine.storyData to find the story title
         this.engine.addChoice("Begin the story");
+        console.log(this.engine.storyData.Title);
     }
 
     handleChoice() {
-        this.engine.gotoScene(Location, "Home"); // TODO: replace this text by the initial location of the story
+        this.engine.gotoScene(Location, "Kresge"); // TODO: replace this text by the initial location of the story
     }
 }
 
 class Location extends Scene {
     create(key) {
-        let locationData = undefined; // TODO: use `key` to get the data object for the current story location
+        let locationData = key; // TODO: use `key` to get the data object for the current story location
         this.engine.show("Body text goes here"); // TODO: replace this text by the Body of the location data
         
         if(true) { // TODO: check if the location has any Choices
