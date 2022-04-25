@@ -6,7 +6,8 @@ class Start extends Scene {
     }
 
     handleChoice() {
-        this.engine.gotoScene(Location, "Kresge"); // TODO: replace this text by the initial location of the story
+        this.engine.gotoScene(Location, this.engine.storyData.InitialLocation); // TODO: replace this text by the initial location of the story
+        //console.log(this.engine.storyData.InitialLocation);
     }
 }
 
