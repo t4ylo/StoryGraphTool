@@ -7,18 +7,18 @@ class Start extends Scene {
 
     handleChoice() {
         this.engine.gotoScene(Location, this.engine.storyData.InitialLocation); // TODO: replace this text by the initial location of the story
-        //console.log(this.engine.storyData.InitialLocation);
+        console.log(this.engine.storyData.InitialLocation);
     }
 }
 
 class Location extends Scene {
     create(key) {
-        let locationData = key; // TODO: use `key` to get the data object for the current story location
-        this.engine.show("Body text goes here"); // TODO: replace this text by the Body of the location data
+        let locationData = this.engine.storyData.Locations; // TODO: use `key` to get the data object for the current story location
+        this.engine.show(locationData.Body); // TODO: replace this text by the Body of the location data
         
-        if(true) { // TODO: check if the location has any Choices
-            for(let choice of ["example data"]) { // TODO: loop over the location's Choices
-                this.engine.addChoice("action text"); // TODO: use the Text of the choice
+        if("Choices" in locationData) { // TODO: check if the location has any Choices
+            for(let choice of locationData.Choices) { // TODO: loop over the location's Choices
+                this.engine.addChoice(choice.Text, choice.Target); // TODO: use the Text of the choice
                 // TODO: add a useful second argument to addChoice so that the current code of handleChoice below works
             }
         } else {
