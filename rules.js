@@ -14,7 +14,7 @@ class Start extends Scene {
 class Location extends Scene {
     create(key) {
         let locationData = this.engine.storyData.Locations[key]; // TODO: use `key` to get the data object for the current story location
-        console.log(locationData)
+        //console.log(locationData)
         this.engine.show(locationData.Body); // TODO: replace this text by the Body of the location data
         
         if("Choices" in locationData) { // TODO: check if the location has any Choices
