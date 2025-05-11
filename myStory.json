@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
     "Title": "Memories at UCSC West Side",
     "Credits": "Created by Adam Smith (amsmith@ucsc.edu). Edited by Jose Salas (jssalas@ucsc.edu)",
     "InitialLocation": "Porter",
@@ -27,45 +28,171 @@
         },
         "Porter": {
             "Body": "This is Porter College, the one I'm affiliated with. \nBack in Freshman year I was worried about it raining because my High School Micro Econ teacher informed me about the Porter Run. \nI did not participate when it did happen, but I had the misfortune of seeing people naked out in the freezing rain. \nAlthough it reminded me that there are moments in life where risks and crazy decisions can be fun.",
+=======
+    "Title": "Life in Paris",
+    "Credits": "Created by Taylor Pearce",
+    "InitialLocation": "Apartment",
+    "Locations": {
+        "Apartment": {
+            "Body": "This is your quaint aparment in the center of Paris.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Kresge"
-                },
-                {
-                    "Text": "South",
-                    "Target": "Rachel Carson"
+                    "Text": "Leave",
+                    "Target": "Outside Apartment"
                 }
             ]
         },
+        "Outside Apartment": {
+            "Body": "As you step outside, you are met with a beautiful view of buildings with a rich history and the Eiffel Tower in the distance.",
+>>>>>>> Stashed changes
+            "Choices": [
+                {
+                    "Text": "Go back into your apartment?",
+                    "Target": "Apartment"
+                },
+                {
+                    "Text": "Go towards the Eiffel Tower?",
+                    "Target": "Eiffel Tower"
+                }
+            ]
+        },
+<<<<<<< Updated upstream
         "Rachel Carson": {
             "Body": "Here at Rachel Carson College, \nthe dining hall stayed open most nights for Late Night Dinner which fit my schedule amazingly during Freshman year. \nI had many great memories with a couple of international friends I made before the place got shut down. \nIt reminds me that I need to cherish the good times I have and not take things for granted, \nespecially when you're in an unfamilar place.",
+=======
+        "Eiffel Tower": {
+            "Body": "As you walk towards the Eiffel Tower you see a cute, quaint cafe.",
+>>>>>>> Stashed changes
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Porter"
+                    "Text": "Go back to your apartment?",
+                    "Target": "Outside Apartment"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Oakes"
+                    "Text": "Go into the cafe?",
+                    "Target": "Cafe"
                 }
             ]
         },
+<<<<<<< Updated upstream
         "Oakes": {
             "Body": "Oakes College, where you get students who shout out their own college name like a bunch of apes. \nStrangely enough it's not the prettiest looking college, but I guess you can't judge a book by its cover.",
+=======
+        "Cafe": {
+            "Body": "The cafe is full of elegant decorations with baby pink accents. You sit down, order a matcha latte, and relax for a while reading your book.",
+>>>>>>> Stashed changes
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
+                    "Text": "Go back to your apartment?",
+                    "Target": "Outside Apartment"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Beyond"
+                    "Text": "Continue towards the Eiffel Tower?",
+                    "Target": "Eiffel Tower Park"
                 }
             ]
         },
+<<<<<<< Updated upstream
         "Beyond": {
             "Body": "And beyond there's more than just grass. \nThe fields open up and you can the ocean. \nIt reminds me that despite all the crap we go through, \nthe world can be beautiful and there's a reason for why I am here today."
+=======
+        "Eiffel Tower Park": {
+            "Body": "As you head towards Eiffel Tower Park you take not of the beautiful lush greenery than encompasses it. Among the bushes that line the paths, you spot an object that sparkles when the light hits it.",
+            "Choices": [
+                {
+                    "Text": "Investigate?",
+                    "Target": "Investigate Object"
+                }
+
+            ]
+        },
+        "Investigate Object": {
+            "Body": "Among further inspection, you realize the object is a tape recorder.",
+            "Choices": [
+                {
+                    "Text": "Play the tape?",
+                    "Target": "Tape Play"
+                }
+            ]
+        },
+
+        "Tape Play": {
+            "Body": "{{RANDOM_TAPE_MESSAGE}}",
+            "Choices": [
+                 {
+                    "Text": "Put the tape recorder back down.",
+                    "Target": "Eiffel Tower Park2"
+                }
+             ]
+        },
+
+        "Eiffel Tower Park2": {
+            "Body": "You take a moment to reflect on what you just heard, but decide to continue toward the Eiffel Tower.",
+            "Choices": [
+                {
+                    "Text": "Go to the base of the tower.",
+                    "Target": "Denied Access"
+                }
+            ]
+        },
+
+        "Denied Access": {
+            "Body": "Upon walking up to the base of the tower, you see a man in a suit blocking the entrance to the stairs. He stops you as you approach and says 'Card please.' You realize you might have missed something earlier.",
+            "Choices": [
+                {
+                    "Text": "Go back and investigate the recorder again.",
+                    "Target": "Tape Recheck"
+                }
+            ]
+        },
+
+        "Tape Recheck": {
+            "Body": "You kneel by the tape recorder once again. This time, you notice a hidden card tucked under it.",
+            "Choices": [
+                {
+                    "Text": "Take the card.",
+                    "Target": "Card Collected"
+                }
+            ]
+        },
+        "Card Collected": {
+            "Body": "You pocket the card, feeling a sense of progress. Time to head back.",
+            "Choices": [
+                {
+                    "Text": "Return to the tower.",
+                    "Target": "Granted Access"
+                }
+            ]
+        },
+
+        "Granted Access": {
+            "Body": "You approach the man yet again and when prompted, you give him the card. He examines it and gestures for you to enter.",
+            "Choices": [
+                {
+                    "Text": "Take the stairs?",
+                    "Target": "Top of Tower"
+                },
+
+                {
+                    "Text": "Take the elevator?",
+                    "Target": "Top of Tower"
+                }
+            ]
+        },
+
+        "Top of Tower": {
+            "Body": "You reach the top of the tower and are met with breathtaking views of Paris. You decide to take advantage of the champagne bar and spend the evening reading peacefully, taking it all in, and reflecting on the journey you've taken to get here.",
+            "Choices": [
+                {
+                    "Text": "Thank you!",
+                    "Target": "End Message"
+                }
+            ]
+        },
+
+        "End Message": {
+            "Body": "Thank you for playing Life in Paris. I hope you enjoyed and had a good time on your journey :)"
+>>>>>>> Stashed changes
         }
     }
 }

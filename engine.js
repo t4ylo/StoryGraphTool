@@ -18,6 +18,15 @@ class Engine {
         ).then(
             (json) => {
                 this.storyData = json;
+
+                const tapeMessages = [
+                    "You hear a child laughing and birds chirping in the background.",
+                    "A soft piano melody plays, echoing through the tape.",
+                    "A voice whispers in French: 'Don't forget who you are...'"
+                ];
+                const randomIndex = Math.floor(Math.random() * tapeMessages.length);
+                this.storyData.Locations["Tape Play"].Body = tapeMessages[randomIndex];
+                
                 this.gotoScene(firstSceneClass)
             }
         );
