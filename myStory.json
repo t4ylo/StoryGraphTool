@@ -1,34 +1,5 @@
 {
-<<<<<<< Updated upstream
-    "Title": "Memories at UCSC West Side",
-    "Credits": "Created by Adam Smith (amsmith@ucsc.edu). Edited by Jose Salas (jssalas@ucsc.edu)",
-    "InitialLocation": "Porter",
-    "Locations": {
-        "Redwood Grove": {
-            "Body": "These are the Redwood Grove Apartments. \nI had met a transfer student who invited me over once to their apartment, \nbut things sort of fell off and it reminded me that people come and go even if you got along.",
-            "Choices": [
-                {
-                    "Text": "South",
-                    "Target": "Kresge"
-                }
-            ]
-        },
-        "Kresge": {
-            "Body": "This is Kresge College, probably the college with the most sister bridges. \nI had a call here with one of the CAPS officials during a time of crisis during my Sophomore year. \nSeeing construction workers across one of the bridges reminded me that people can be break, \nincluding myself, and reconstructing is very similar to healing from pain.",
-            "Choices": [
-                {
-                    "Text": "South",
-                    "Target": "Porter"
-                },
-                {
-                    "Text": "North",
-                    "Target": "Redwood Grove"
-                }
-            ]
-        },
-        "Porter": {
-            "Body": "This is Porter College, the one I'm affiliated with. \nBack in Freshman year I was worried about it raining because my High School Micro Econ teacher informed me about the Porter Run. \nI did not participate when it did happen, but I had the misfortune of seeing people naked out in the freezing rain. \nAlthough it reminded me that there are moments in life where risks and crazy decisions can be fun.",
-=======
+    
     "Title": "Life in Paris",
     "Credits": "Created by Taylor Pearce",
     "InitialLocation": "Apartment",
@@ -44,7 +15,6 @@
         },
         "Outside Apartment": {
             "Body": "As you step outside, you are met with a beautiful view of buildings with a rich history and the Eiffel Tower in the distance.",
->>>>>>> Stashed changes
             "Choices": [
                 {
                     "Text": "Go back into your apartment?",
@@ -56,13 +26,9 @@
                 }
             ]
         },
-<<<<<<< Updated upstream
-        "Rachel Carson": {
-            "Body": "Here at Rachel Carson College, \nthe dining hall stayed open most nights for Late Night Dinner which fit my schedule amazingly during Freshman year. \nI had many great memories with a couple of international friends I made before the place got shut down. \nIt reminds me that I need to cherish the good times I have and not take things for granted, \nespecially when you're in an unfamilar place.",
-=======
+        
         "Eiffel Tower": {
             "Body": "As you walk towards the Eiffel Tower you see a cute, quaint cafe.",
->>>>>>> Stashed changes
             "Choices": [
                 {
                     "Text": "Go back to your apartment?",
@@ -74,13 +40,9 @@
                 }
             ]
         },
-<<<<<<< Updated upstream
-        "Oakes": {
-            "Body": "Oakes College, where you get students who shout out their own college name like a bunch of apes. \nStrangely enough it's not the prettiest looking college, but I guess you can't judge a book by its cover.",
-=======
+        
         "Cafe": {
             "Body": "The cafe is full of elegant decorations with baby pink accents. You sit down, order a matcha latte, and relax for a while reading your book.",
->>>>>>> Stashed changes
             "Choices": [
                 {
                     "Text": "Go back to your apartment?",
@@ -92,10 +54,6 @@
                 }
             ]
         },
-<<<<<<< Updated upstream
-        "Beyond": {
-            "Body": "And beyond there's more than just grass. \nThe fields open up and you can the ocean. \nIt reminds me that despite all the crap we go through, \nthe world can be beautiful and there's a reason for why I am here today."
-=======
         "Eiffel Tower Park": {
             "Body": "As you head towards Eiffel Tower Park you take not of the beautiful lush greenery than encompasses it. Among the bushes that line the paths, you spot an object that sparkles when the light hits it.",
             "Choices": [
@@ -119,11 +77,11 @@
         "Tape Play": {
             "Body": "{{RANDOM_TAPE_MESSAGE}}",
             "Choices": [
-                 {
+                {
                     "Text": "Put the tape recorder back down.",
                     "Target": "Eiffel Tower Park2"
                 }
-             ]
+            ]
         },
 
         "Eiffel Tower Park2": {
@@ -192,7 +150,14 @@
 
         "End Message": {
             "Body": "Thank you for playing Life in Paris. I hope you enjoyed and had a good time on your journey :)"
->>>>>>> Stashed changes
         }
-    }
+
+    },
+    "RandomTapeMessages": [
+    "The tape crackles: 'You are not alone in this city.'",
+    "The voice says: 'The truth lies beneath the tower.'",
+    "You hear a whisper: 'Follow the music.'",
+    "A calm voice: 'There’s still time to change your path.'"
+]
+    
 }
